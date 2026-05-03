@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shruti Dhere | Java Developer & AI Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="page-overlay"></div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#home" class="brand">Shruti<span>D</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Software Developer Intern at Skylark</span>
+          <h1>Hi, I’m <span>Shruti Dhere</span></h1>
+          <p class="hero-role">Java Developer | AI Enthusiast</p>
+          <p class="hero-text">Building scalable backend systems and intelligent applications.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="./assets/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="hero-card-glass">
+            <p>Fresher with internship experience in backend development, system design, and AI-powered solutions.</p>
+            <ul class="hero-highlights">
+              <li>Java</li>
+              <li>Backend Development</li>
+              <li>AI-based systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hero-decor"></div>
+    </section>
+
+    <section class="section section-about" id="about">
+      <div class="container section-head">
+        <span class="section-tag">About</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="container about-grid reveal-group">
+        <div class="about-copy">
+          <p>Highly motivated software developer with strong expertise in Java, backend development, and system design. Passionate about building scalable applications, solving real-world problems, and continuously learning modern technologies.</p>
+          <div class="about-highlights">
+            <div><strong>Java</strong></div>
+            <div><strong>Backend Development</strong></div>
+            <div><strong>AI-based systems</strong></div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="glass-panel">
+            <p>Focused on clean code, reliability, and building meaningful backend services that help teams deliver faster and smarter.</p>
+            <div class="about-stats">
+              <div><span>01</span><p>Internship Experience</p></div>
+              <div><span>100%</span><p>Learning Mindset</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="skills">
+      <div class="container section-head">
+        <span class="section-tag">Skills</span>
+        <h2>Technical Expertise</h2>
+      </div>
+      <div class="container skills-grid">
+        <article class="skill-card reveal">
+          <h3>Frontend</h3>
+          <p>Modern UI building blocks & responsive design.</p>
+          <div class="skill-list">HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, jQuery, AJAX</div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Backend</h3>
+          <p>Core backend engineering with Java and API driven services.</p>
+          <div class="skill-list">Core Java, OOP, Data Structures, JDBC, Servlets, JSP, Spring Boot, Hibernate, JPA, REST APIs, Microservices</div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Database</h3>
+          <p>Structured data models and relational storage.</p>
+          <div class="skill-list">MySQL, PostgreSQL</div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Tools</h3>
+          <p>Development workflow and collaboration.</p>
+          <div class="skill-list">Git, GitHub, Postman, Eclipse, STS, MySQL Workbench</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projects">
+      <div class="container section-head">
+        <span class="section-tag">Projects</span>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="container projects-grid">
+        <article class="project-card reveal" data-project="ambulance">
+          <div class="project-image" aria-hidden="true"></div>
+          <div class="project-copy">
+            <h3>AI-powered Smart Ambulance Tracking System</h3>
+            <p>Designed a backend solution for real-time ambulance tracking with GPS, routing, and hospital coordination.</p>
+            <div class="project-tags">Java, Spring Boot, Microservices, Google Maps API</div>
+            <button class="btn btn-tertiary project-details">View Details</button>
+          </div>
+        </article>
+        <article class="project-card reveal" data-project="codehire">
+          <div class="project-image" aria-hidden="true"></div>
+          <div class="project-copy">
+            <h3>CodeHire AI: Smart Resume Analyzer</h3>
+            <p>Built a resume analysis service with keyword extraction, ATS scoring, and job recommendation support.</p>
+            <div class="project-tags">Java, Spring Boot, MySQL, NLP API</div>
+            <button class="btn btn-tertiary project-details">View Details</button>
+          </div>
+        </article>
+        <article class="project-card reveal coming-soon">
+          <div class="project-image" aria-hidden="true"></div>
+          <div class="project-copy">
+            <h3>Coming Soon</h3>
+            <p>More AI-backed and backend-focused projects are in progress for future showcases.</p>
+            <div class="project-tags">Planning, Architecture, Research</div>
+            <button class="btn btn-tertiary disabled" disabled>Details Coming</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-experience" id="experience">
+      <div class="container section-head">
+        <span class="section-tag">Experience</span>
+        <h2>Internship</h2>
+      </div>
+      <div class="container experience-card reveal">
+        <div class="experience-copy">
+          <h3>Software Developer Intern – Skylark</h3>
+          <ul>
+            <li>Assisted in backend development tasks.</li>
+            <li>Worked with Java and Spring Boot.</li>
+            <li>Gained experience in real-world application development.</li>
+            <li>Collaborated in development workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-resume" id="resume">
+      <div class="container section-head">
+        <span class="section-tag">Resume</span>
+        <h2>Review My Resume</h2>
+      </div>
+      <div class="container resume-panel reveal">
+        <div class="resume-copy">
+          <p>Explore my resume for a complete view of my skills, internship experience, and technical strengths.</p>
+          <div class="resume-actions">
+            <a href="./assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            <a href="./assets/resume.pdf" class="btn btn-secondary" target="_blank">Open in New Tab</a>
+          </div>
+        </div>
+        <div class="resume-preview">
+          <iframe src="./assets/resume.pdf" title="Resume preview"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container section-head">
+        <span class="section-tag">Contact</span>
+        <h2>Let’s Connect</h2>
+      </div>
+      <div class="container contact-grid reveal-group">
+        <div class="contact-info glass-panel">
+          <p>Feel free to reach out for opportunities, mentoring, or collaborative projects.</p>
+          <div class="contact-list">
+            <div><strong>Email</strong><a href="mailto:dhereshruti351@gmail.com">dhereshruti351@gmail.com</a></div>
+            <div><strong>Phone</strong><a href="tel:7499210447">+91 74992 10447</a></div>
+            <div><strong>GitHub</strong><a href="https://github.com/ShrutiDhere" target="_blank" rel="noreferrer">github.com/ShrutiDhere</a></div>
+            <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/shruti-dhere-4191bb286/" target="_blank" rel="noreferrer">linkedin.com/in/shruti-dhere-4191bb286</a></div>
+          </div>
+        </div>
+        <form class="contact-form glass-panel" action="https://formspree.io/f/mayvnbqe" method="POST">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-copy">© 2026 Shruti Dhere. Fresh Developer focused on Java and AI.</div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+      <h3 id="modalTitle"></h3>
+      <p class="modal-description"></p>
+      <div class="modal-details">
+        <div>
+          <h4>Features</h4>
+          <ul class="modal-features"></ul>
+        </div>
+        <div>
+          <h4>Tech Stack</h4>
+          <div class="modal-stack"></div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-secondary modal-github" target="_blank" rel="noreferrer">View GitHub</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
