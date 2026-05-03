@@ -141,12 +141,12 @@ img {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section-head {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 
 .section-tag {
@@ -178,6 +178,14 @@ h3 {
 
 h2 {
   font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.section-description {
+  max-width: 680px;
+  margin: 1rem auto 0;
+  color: var(--text-soft);
+  line-height: 1.75;
+  font-size: 1rem;
 }
 
 h3 {
@@ -415,13 +423,21 @@ p {
 }
 
 .section-projects .projects-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   overflow: hidden;
   transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
   border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .project-card:hover {
@@ -432,8 +448,18 @@ p {
 
 .project-image {
   aspect-ratio: 16 / 10;
-  background: linear-gradient(180deg, rgba(124, 108, 255, 0.22), rgba(34, 40, 95, 0.96));
   position: relative;
+  overflow: hidden;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  background: linear-gradient(180deg, rgba(124, 108, 255, 0.22), rgba(34, 40, 95, 0.96));
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-image::before {
@@ -442,10 +468,37 @@ p {
   inset: 0;
   background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.14), transparent 22%),
     radial-gradient(circle at 80% 70%, rgba(64, 208, 255, 0.12), transparent 18%);
+  pointer-events: none;
 }
 
 .project-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
   padding: 1.7rem 1.8rem 2rem;
+}
+
+.project-label {
+  color: var(--accent-soft);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-summary {
+  color: #c5ceff;
+  line-height: 1.85;
+  margin: 0.3rem 0 1.4rem;
+}
+
+.project-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .project-tags {

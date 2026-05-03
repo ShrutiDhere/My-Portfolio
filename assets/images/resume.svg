@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="40" ry="40" fill="url(#g2)"/>
+  <rect x="110" y="90" width="500" height="340" rx="36" ry="36" fill="#0f1635" opacity="0.9"/>
+  <rect x="190" y="150" width="340" height="240" rx="24" ry="24" fill="#1f2a5b"/>
+  <path d="M230 190h260" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M230 245h180" fill="none" stroke="#c7d2fe" stroke-width="16" stroke-linecap="round"/>
+  <path d="M230 300h260" fill="none" stroke="#9ca3af" stroke-width="16" stroke-linecap="round"/>
+  <path d="M230 350h160" fill="none" stroke="#9ca3af" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="280" cy="210" r="30" fill="#60a5fa" opacity="0.9"/>
+  <text x="50%" y="88%" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="48" opacity="0.85">Resume AI</text>
+</svg>
